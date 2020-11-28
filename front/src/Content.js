@@ -9,6 +9,7 @@ import Schedule from "./Schedule";
 import Tickets from "./Tickets";
 import Halls from "./Halls";
 import Admin from "./Admin";
+import Reports from "./Reports";
 class Content extends React.Component{
 
     render() {
@@ -24,6 +25,7 @@ class Content extends React.Component{
                     <Route path={"/tickets"} component={Tickets}/>
                     <Route path={"/halls"} component={Halls}/>
                     <Route path={"/admin"} component={Admin}/>
+                    <Route path={"/report"} component={Reports}/>
                     <Route exact path={""} component={Home}/>
                 </Switch>
             </BrowserRouter>

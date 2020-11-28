@@ -29,6 +29,22 @@ class Schedule extends React.Component{
                                                     alert("Такого места нет")
                                                     return;
                                                 }
+                                                for (let i of context.data.ticket)
+                                                {
+                                                    if (i.placeId == place)
+                                                    {
+                                                        console.log(JSON.stringify(i) + "_-_-_-_")
+                                                        if (i.hallId == hall.id){
+                                                            if (i.filmId == film.id)
+                                                            {
+                                                                alert("Занято")
+                                                                return null;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
                                                 let placeId = context.data.place.filter((value)=>{
                                                     return value.number == place;
                                                 })[0].id;
@@ -40,6 +56,7 @@ class Schedule extends React.Component{
                                                 fetch(request);
                                                 console.log(request)
                                                 alert("Билет куплен! Оплатите его при получении")
+                                                window.location.reload();
 
                                             }}>
                                                 Купить билет

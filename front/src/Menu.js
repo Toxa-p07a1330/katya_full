@@ -21,7 +21,7 @@ class Menu extends React.Component{
                             padding:"1%",
                             color:"black",
                             backgroundColor: "#87CEEB",
-                            width: "100%",
+                            width: "100%    ",
                             display: "block"
                         }
                         return (
@@ -33,7 +33,8 @@ class Menu extends React.Component{
                                 <a href={"/schedule"} style={styleLink}>Расписание</a><br/>
                                 <a href={"/prices"} style={styleLink}>Цены</a><br/>
                                 <a href={"/places"} style={styleLink}>Места</a><br/>
-                                <a href={"/admin"} style={styleLink}>Панель администратора</a>
+                                <a href={"/admin"} style={styleLink}>Панель администратора</a><br/>
+                                <a href={"/report" } style={styleLink}>Отчеты</a>
                             </div>)
                     }}
                 </MyContext.Consumer>
