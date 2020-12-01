@@ -55,7 +55,7 @@ class Schedule extends React.Component{
                                                     `${price.id}, ${placeId})`;
                                                 fetch(request);
                                                 console.log(request)
-                                                alert("Билет куплен! Оплатите его при получении")
+                                                alert("Билет куплен! Оплатите его при  получении")
                                                 window.location.reload();
 
                                             }}>
